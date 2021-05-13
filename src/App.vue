@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+  <h2>QUERO PASSAR NO <span style="color:#f00">{{fName}}</span></h2> 
+<input v-model="fName"/>
     <img alt="Vue logo" src="./assets/logo.png">
     <Test msg="Welcome to Your Vue.js App"/>
   </div>
@@ -12,6 +14,11 @@ export default {
   name: 'app',
   components: {
     Test
+  },
+  data(){
+    return {
+      fName: '',
+    }
   }
 }
 </script>
